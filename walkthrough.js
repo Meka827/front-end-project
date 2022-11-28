@@ -136,10 +136,10 @@ function control() {
     camera.position.x += Math.sin(camera.rotation.y - Math.PI / 2) * player.speed;
     camera.position.z += -Math.cos(camera.rotation.y - Math.PI / 2) * player.speed;
   }
-  if(controls[81]){ // la
+  if(controls[81]){ // rotate left
     camera.rotation.y -= player.turnSpeed;
   }
-  if(controls[69]){ // ra
+  if(controls[69]){ // rotate right
     camera.rotation.y += player.turnSpeed;
   }
   if(controls[32]) { // space
@@ -264,73 +264,10 @@ cube8.position.set(-10,5,-12.5);
 
 
 
-const artObject1 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/437323`
-fetch(artObject1, {
-   // credentials: 'include'
-})
-.then((response) => response.json())
-.then((data) => {
-    let image1 = data.artistDisplayName
-   // console.log(image1)
-   
-})
 
-const artObject2 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/206321`
-fetch(artObject2)
-.then((response) => response.json())
-.then((data) => {
-    let image2 = data.primaryImage
-    
-})
 
-const artObject3 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/436105`
-fetch(artObject3)
-.then((response) => response.json())
-.then((data) => {
-    let image3 = data.primaryImage
-    
-})
 
-const artObject4 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/247017`
-fetch(artObject4)
-.then((response) => response.json())
-.then((data) => {
-    let image4 = data.primaryImage
-    
-})
-
-const artObject5 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/435744`
-fetch(artObject5)
-.then((response) => response.json())
-.then((data) => {
-    let image5 = data.primaryImage
-    
-})
-
-const artObject6 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/436453`
-fetch(artObject6)
-.then((response) => response.json())
-.then((data) => {
-    let image6 = data.primaryImage
-    
-})
-
-const artObject7 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/437326`
-fetch(artObject7)
-.then((response) => response.json())
-.then((data) => {
-    let image7 = data.primaryImage
-    
-})
-
-const artObject8 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/10186`
-fetch(artObject8)
-.then((response) => response.json())
-.then((data) => {
-    let image8 = data.primaryImage
-  
-})
-console.log()
+//console.log()
 
 //event listener
 
@@ -342,11 +279,11 @@ console.log()
 
 
 
-cube1.addEventListener( 'click', function ( event ) {
+// cube1.addEventListener( 'click', function ( event ) {
 
-	console.log('clicked');
+// 	console.log('clicked');
 
-} );
+// } );
 
 
 //const labelRenderer = new CSS2DRenderer();
